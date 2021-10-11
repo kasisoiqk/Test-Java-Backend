@@ -1,0 +1,206 @@
+.app {
+    background: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
+    font-size: 1.4rem;
+    color: var(--white-color);
+    min-height: 100vh;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.4s;
+}
+
+.modal__input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    width: 310px;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
+    animation: GrowAndFadeIn .4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.modal__form {
+    padding: 28px;
+}
+
+.modal__tab {
+    display: flex;
+    justify-content: space-between;
+    height: 54px;
+}
+
+.input-login .modal-tab__register {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-register .modal-tab__login {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-login .hide-login {
+    display: none;
+}
+
+.input-register .hide-register {
+    display: none;
+}
+
+.modal-tab__login, .modal-tab__register {
+    display: block;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 54px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.modal-form__text {
+    margin: 8px 0 14px;
+}
+
+.modal-form__text > h2 {
+    line-height: 2.2rem;
+}
+
+.modal-form__text > p {
+    line-height: 2rem;
+}
+
+.modal-form__group {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+    border-radius: 2px;
+}
+
+.modal-form__group-flex {
+    display: flex;
+}
+
+.modal-form__group-block {
+    display: block;
+    width: 100%;
+    flex: 2;
+}
+
+.modal-form__group-block-avt {
+    flex: 1;
+}
+
+.modal-form__group-block + .modal-form__group-block {
+    margin-left: 8px;
+}
+
+.modal-form__group-avt {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: calc(100% - 16px);
+    margin: 8px 0;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.modal-form__avt {
+    --size: 80px;
+    width: var(--size);
+    height: var(--size);
+    margin-top: 4px;
+}
+
+.modal-form__avt > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.modal-form__avt-btn {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    padding: 4px 8px;
+    color: var(--text-color-light);
+    cursor: pointer;
+}
+
+.modal-form__avt-btn:hover {
+    opacity: 0.9;
+}
+
+.modal-form__avt-text {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 2px;
+}
+
+.modal-form__icon {
+    width: 36px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.modal-form__group > span {
+    font-size: 1.6rem;
+}
+
+.modal-form__input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.modal-form__input::placeholder {
+    color: var(--white-color);
+}
+
+.modal-form__group-btn {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.modal-form__group-btn + .modal-form__group-btn {
+    margin-left: 8px;
+}
+
+.modal-form__btn {
+    display: block;
+    background-color: var(--white-color);
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 54px;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.modal-form__btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--white-color);
+}

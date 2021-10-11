@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #6d3eec;
+    --secondary-color: #f1a655;
+
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-color-light: #666;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* Animation */
+@keyframes GrowAndFadeIn {
+    from {
+        /* transform: scale(0.8); */
+        opacity: 0;
+    }
+    to {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+}

@@ -1,0 +1,151 @@
+.app {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    background: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
+    min-height: 100vh;
+}
+
+table {
+    width: 100%;
+    margin-top: 36px;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+    color: var(--text-color-light);
+    border-radius: 4px;
+}
+
+table th,
+table td {
+    padding: 15px 30px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table th {
+    border-radius: 4px;
+}
+
+table th {
+    color: #37198a;
+    font-weight: 600;
+    background-color: #f1f7f7;
+}
+
+table tr td {
+    border-top: 1px solid #f0f4f8;
+    background-color: var(--white-color);
+}
+
+table tr td label {
+    color: var(--white-color);
+    text-decoration: none;
+    background: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+table tr td label:hover {
+    opacity: 0.9;
+}
+
+table .table__user {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+table .table__user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sticky-table {
+    margin: 0 8%;
+    overflow: auto;
+}
+
+.sticky-table tbody td:first-child,
+.sticky-table thead th:first-child {
+    position: sticky;
+    left: 0;
+}
+
+#modal-detail:checked ~ .modal {
+    display: block;
+}
+
+.modal {
+    display: none;
+}
+
+.app__btn {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-add {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 12px 0;
+    color: var(--text-color-light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    transition: .2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+}
+
+.btn-add:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white-color);
+}
+
+/* Modal */
+.input-detail .hide-detail {
+    display: none;
+}
+
+.input-add .hide-add {
+    display: none;
+}
+
+.app__header {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.header__user {
+    height: 100%;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+.header__user a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 62px;
+}
+
+.header__user img {
+    height: 90%;
+    border-radius: 50%;
+}
